@@ -27,7 +27,7 @@ export default function DemoCreateAccount() {
         resolver: zodResolver(schema),
     });
 
-    const onSubmit = (data) => {
+    const onSubmit = (data: any) => {
         toast({
             title: "Sign in with the account",
             description: `Email: ${data.email}, Password: ${data.password}`,
